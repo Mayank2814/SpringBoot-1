@@ -9,8 +9,9 @@ import org.springframework.context.ApplicationContext;
 public class DemoApplication {
 
 	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
 		
-	ApplicationContext context = SpringApplication.run(DemoApplication.class, args);
+	//ApplicationContext context = SpringApplication.run(DemoApplication.class, args);
 ////		System.out.println("Hello Mayank");
 //		Student student= context.getBean(Student.class);
 //		student.setName("Rahul");
@@ -18,8 +19,8 @@ public class DemoApplication {
 //
 //		System.out.println(student.getName());
 //		System.out.println(student.getAge());
-		OrderService orderService=context.getBean(OrderService.class);
-		orderService.placeOrder();
+//		OrderService orderService=context.getBean(OrderService.class);
+//		orderService.placeOrder();
 
 	}
 
