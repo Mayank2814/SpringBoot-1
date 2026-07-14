@@ -11,17 +11,16 @@ public class StudentServer {
     @PostMapping("/create")
     public String storeStudent(@RequestBody Student student){
 
-        int id=student.getId();
-        String name=student.getName();
-        int age=student.getAge();
-
-
-        return """
-                id:1
-                name : Mayank
-                Department : CSE
-                age: 21
-                """;
+//        int id=student.getId();
+//        String name=student.getName();
+//        int age=student.getAge();
+//        String department=student.getDepartment();
+//
+//
+////        return "id: "+id,
+////                ", name: "+name ,
+////                ", age: "+age,
+////                ",department: "+department;
     }
 
 }
